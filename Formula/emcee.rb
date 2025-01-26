@@ -5,20 +5,20 @@
 class Emcee < Formula
   desc ""
   homepage ""
-  version "0.2.0"
+  version "0.3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/loopwork-ai/emcee/releases/download/v0.2.0/emcee_Darwin_x86_64.tar.gz"
-      sha256 "1ff4503cb4f7b1bc889667e46ca11c424295e72d24bae86c2be25d6171ff1292"
+      url "https://github.com/loopwork-ai/emcee/releases/download/v0.3.0/emcee_Darwin_x86_64.tar.gz"
+      sha256 "d011cc726a3f4977a30f6b4ba1a00c602bd92871de90b0e238c91fd0c8fa1aac"
 
       def install
         bin.install "emcee"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/loopwork-ai/emcee/releases/download/v0.2.0/emcee_Darwin_arm64.tar.gz"
-      sha256 "bd09792acdd3c46fdeb8e5c980ebe43ac46690fbc5cbe741a4c013eebbdbb4a1"
+      url "https://github.com/loopwork-ai/emcee/releases/download/v0.3.0/emcee_Darwin_arm64.tar.gz"
+      sha256 "4a3cf6d00d9027cfe62cdf0cb573c58ddd53573c790dfea22a7580305d708010"
 
       def install
         bin.install "emcee"
@@ -29,8 +29,8 @@ class Emcee < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/loopwork-ai/emcee/releases/download/v0.2.0/emcee_Linux_x86_64.tar.gz"
-        sha256 "acea7c9d617b9d3d4c27718eb4d63145f3d3fb076aa91a483805a66f877952b5"
+        url "https://github.com/loopwork-ai/emcee/releases/download/v0.3.0/emcee_Linux_x86_64.tar.gz"
+        sha256 "9f72895be975fe2fdca10dd3e0f5ff3ee089c0b5547ab7c1c97af36510d3f976"
 
         def install
           bin.install "emcee"
@@ -39,8 +39,8 @@ class Emcee < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/loopwork-ai/emcee/releases/download/v0.2.0/emcee_Linux_arm64.tar.gz"
-        sha256 "73db851fbc63a41e3ae46d6127866fdc05a4dd4323295c1d5ce8f5f4e143bee8"
+        url "https://github.com/loopwork-ai/emcee/releases/download/v0.3.0/emcee_Linux_arm64.tar.gz"
+        sha256 "abc3196b3edb2f2962d31af07f0407ebd1d2008bfa614a927ed9bdcf4769f05b"
 
         def install
           bin.install "emcee"
