@@ -5,20 +5,20 @@
 class Emcee < Formula
   desc ""
   homepage ""
-  version "0.3.1"
+  version "0.4.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/loopwork-ai/emcee/releases/download/v0.3.1/emcee_Darwin_x86_64.tar.gz"
-      sha256 "196a2d05e9de30796b91e48d931f18d3c6882c856ddfec5bf68a4bf9a591aa5b"
+      url "https://github.com/loopwork-ai/emcee/releases/download/v0.4.0/emcee_Darwin_x86_64.tar.gz"
+      sha256 "48765a35eaab256503b43e88cd244c0819cafc60485c41ad4c6bec4667ca783d"
 
       def install
         bin.install "emcee"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/loopwork-ai/emcee/releases/download/v0.3.1/emcee_Darwin_arm64.tar.gz"
-      sha256 "647e98cc91e617f5585f616038d1bc3d7e3dd7479e67af8aa01ff9cb3ec12ac9"
+      url "https://github.com/loopwork-ai/emcee/releases/download/v0.4.0/emcee_Darwin_arm64.tar.gz"
+      sha256 "7f0423016240b9bac25ab3c1ba3f85d1b03f0f877a085574b8aadef503f75a6d"
 
       def install
         bin.install "emcee"
@@ -29,8 +29,8 @@ class Emcee < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/loopwork-ai/emcee/releases/download/v0.3.1/emcee_Linux_x86_64.tar.gz"
-        sha256 "f7d846c56f956ea3a29f6fa257cd602bf4c438d636fb8a15ef6af0be14f40bdc"
+        url "https://github.com/loopwork-ai/emcee/releases/download/v0.4.0/emcee_Linux_x86_64.tar.gz"
+        sha256 "8444a62f5d99071bb03829cc9e2c705bd45e42d2fbc0b0e0b1ad2e9168c6f377"
 
         def install
           bin.install "emcee"
@@ -39,8 +39,8 @@ class Emcee < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/loopwork-ai/emcee/releases/download/v0.3.1/emcee_Linux_arm64.tar.gz"
-        sha256 "eb8a164b663633b10b729f74df0021f3dc925aa89433f2632b5d374b393c1c8f"
+        url "https://github.com/loopwork-ai/emcee/releases/download/v0.4.0/emcee_Linux_arm64.tar.gz"
+        sha256 "474e686de6dc75568c6373716d8761d4d352790c618b160bc44122084781a7d2"
 
         def install
           bin.install "emcee"
