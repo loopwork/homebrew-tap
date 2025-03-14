@@ -5,20 +5,20 @@
 class Emcee < Formula
   desc ""
   homepage ""
-  version "0.4.3"
+  version "0.4.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/loopwork-ai/emcee/releases/download/v0.4.3/emcee_Darwin_x86_64.tar.gz"
-      sha256 "15ac5df14e793f5b01a62c361ce4c2dc7c803d38fb2c786d969903e42365d745"
+      url "https://github.com/loopwork-ai/emcee/releases/download/v0.4.4/emcee_Darwin_x86_64.tar.gz"
+      sha256 "3ee5aedcf7e8915de31699264ea0443bcb524f5e7de473b52bbdf0cd76bcd319"
 
       def install
         bin.install "emcee"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/loopwork-ai/emcee/releases/download/v0.4.3/emcee_Darwin_arm64.tar.gz"
-      sha256 "90e13493105dbe078ac681ee1d7991e9717dc7f3970829eff60416efd3d56a39"
+      url "https://github.com/loopwork-ai/emcee/releases/download/v0.4.4/emcee_Darwin_arm64.tar.gz"
+      sha256 "d85900202ff8e2bd3ba7c734f3fb31b71bfb5b1916e837017943f6fdeffba387"
 
       def install
         bin.install "emcee"
@@ -29,8 +29,8 @@ class Emcee < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/loopwork-ai/emcee/releases/download/v0.4.3/emcee_Linux_x86_64.tar.gz"
-        sha256 "443d15916663fede21c9984926fe139f68eaeb9f4b136937d8a3c20a5879d550"
+        url "https://github.com/loopwork-ai/emcee/releases/download/v0.4.4/emcee_Linux_x86_64.tar.gz"
+        sha256 "0b0db03d329c0bf9a585c802836266fe890615060c45070273f0a493477a688b"
 
         def install
           bin.install "emcee"
@@ -39,8 +39,8 @@ class Emcee < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/loopwork-ai/emcee/releases/download/v0.4.3/emcee_Linux_arm64.tar.gz"
-        sha256 "d62315cadfcb3348e4884cd34873f660fe595d497a8fa3096e6943a6f3e4d4ab"
+        url "https://github.com/loopwork-ai/emcee/releases/download/v0.4.4/emcee_Linux_arm64.tar.gz"
+        sha256 "e5f8c38717f4e1316b6ee3c3a31cb36c225002b136c15c6857f461f75c7443df"
 
         def install
           bin.install "emcee"
